@@ -84,7 +84,10 @@
             function getHireable() {
               const obj = getGithub();
               const hireable = obj.hireable;
-              return hireable;
+              if (hireable === null) {
+                return "Hireable!";
+              }
+              return "Not Hireable";
             }
           </script>
 
