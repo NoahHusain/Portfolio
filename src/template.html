@@ -75,22 +75,6 @@
                 alt="Profile Image"
               />
             </div>
-          <script type="text/javascript"> 
-            function getGithub() {
-              return fetch("https://api.github.com/users/noahhusain").then((res) =>
-                res.json()
-              );
-            }
-            function getHireable() {
-              const obj = getGithub();
-              const hireable = obj.hireable;
-              if (hireable === null) {
-                return "Hireable!";
-              }
-              return "Not Hireable";
-            }
-          </script>
-
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
